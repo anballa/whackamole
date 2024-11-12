@@ -24,7 +24,7 @@ def main():
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     mouse_x, mouse_y = event.pos
 
-                mole_rect = mole_image.get_rect(topeleft=(mole_x, mole_y))
+                mole_rect = mole_image.get_rect(topleft=(mole_x, mole_y))
                 if mole_rect.collidepoint(mouse_x, mouse_y):
                     mole_x = random.randrange(0, SCREEN_WIDTH // GRID_SIZE) * GRID_SIZE
                     mole_y = random.randrange(0, SCREEN_HEIGHT // GRID_SIZE) * GRID_SIZE
